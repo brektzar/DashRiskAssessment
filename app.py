@@ -8,6 +8,7 @@ import SBW
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.FONT_AWESOME, dbc_css])
+server = app.server
 
 color_mode_switch = html.Span(
     [
